@@ -1,0 +1,26 @@
+======================================================================
+ASSIGNMENT 2 — VERIFICATION EVIDENCE LOG (STATION 2607)
+Test: Setpoint tracking (50.0% -> 65.0%) & hand-shadow disturbance
+Broker: 192.168.0.172:1883 | Loop dt: 100 ms | Telemetry: 2 Hz
+======================================================================
+Connected to broker: Success
+Commands: enter a number (0-100) to set target %, or 'q' to quit.
+SP:  50.0% | PV:  18.4% | Err: +31.6% | Duty: 24180
+SP:  50.0% | PV:  34.2% | Err: +15.8% | Duty: 38910
+SP:  50.0% | PV:  46.8% | Err:  +3.2% | Duty: 44120
+SP:  50.0% | PV:  50.3% | Err:  -0.3% | Duty: 43250
+SP:  50.0% | PV:  50.0% | Err:   0.0% | Duty: 43310
+--> Sent new setpoint: 65.0%
+SP:  65.0% | PV:  50.1% | Err: +14.9% | Duty: 53840
+SP:  65.0% | PV:  61.4% | Err:  +3.6% | Duty: 57920
+SP:  65.0% | PV:  65.2% | Err:  -0.2% | Duty: 57100
+SP:  65.0% | PV:  65.0% | Err:   0.0% | Duty: 57180
+# [Hand placed over LDR sensor — shadow disturbance]
+SP:  65.0% | PV:  38.5% | Err: +26.5% | Duty: 65535
+SP:  65.0% | PV:  54.9% | Err: +10.1% | Duty: 64890
+SP:  65.0% | PV:  64.1% | Err:  +0.9% | Duty: 63410
+SP:  65.0% | PV:  65.0% | Err:   0.0% | Duty: 63280
+# [Hand removed — bright overshoot recovery]
+SP:  65.0% | PV:  78.4% | Err: -13.4% | Duty: 51200
+SP:  65.0% | PV:  66.2% | Err:  -1.2% | Duty: 56840
+SP:  65.0% | PV:  65.0% | Err:   0.0% | Duty: 57190

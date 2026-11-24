@@ -1,0 +1,4 @@
+$ mosquitto_sub -h localhost -t "bench/2607/status" -v
+bench/2607/status online
+# [ESP32 unplugged from USB power; broker keepalive timeout ~45s]
+bench/2607/status offline
