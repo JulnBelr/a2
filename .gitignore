@@ -1,3 +1,21 @@
+# Secrets & local configuration (keep config_example.py tracked)
+config.py
+**/config.py
+.env
+
+# Python virtual environments & bytecode
 .venv/
+venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary local logs (move final proof files into docs/evidence/ to commit)
+*.log
+a2_log_*.csv
